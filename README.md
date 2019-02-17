@@ -1,3 +1,4 @@
+
 # IS 373 - WordPress
 
 ## Team Members
@@ -26,4 +27,7 @@ sudo apt install php
 
 ### 3. MySQL
 
-Install MySQL 
+Install MySQL server.
+```sh
+sudo apt install mysql-server
+```
