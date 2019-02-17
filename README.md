@@ -69,3 +69,10 @@ FLUSH PRIVILEGES;
 
 Duplicate `wp-config-sample.php` to `wp-config.php` and edit to satisfaction.  
 Be sure to set database credentials, keys, and salts.
+
+### 5. Run Development Server
+
+Run PHP's built-in webserver.
+```s
+php -S localhost:8080
+```
