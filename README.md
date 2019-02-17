@@ -25,7 +25,7 @@ sudo apt update
 
 ### 2. PHP
 
-Install PHP.
+Install [PHP >= 7.2](http://php.net/).
 ```sh
 sudo apt install php
 ```
