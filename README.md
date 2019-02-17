@@ -25,9 +25,29 @@ Install PHP.
 sudo apt install php
 ```
 
+#### 2.5. Configure `php.ini`
+
+Open `/etc/php/7.2/cli/php.ini` in your favorite text editor.
+```sh
+sudoedit /etc/php/7.2/cli/php.ini
+```
+
+Remove the semi-colons (;) for the following lines:
+```ini
+;extension=mysqli
+;extension=pdo_mysql
+```
+
 ### 3. MySQL
 
 Install MySQL server.
 ```sh
 sudo apt install mysql-server
+```
+
+#### 3.5. Create a user and database
+
+Login to the MySQL Monitor.
+```sh
+sudo mysql
 ```
