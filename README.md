@@ -37,7 +37,7 @@ Open `/etc/php/7.2/cli/php.ini` in your favorite text editor.
 sudoedit /etc/php/7.2/cli/php.ini
 ```
 
-Remove the semi-colons (;) for the following lines:
+Remove the semi-colons (;) for the following lines to enable the MySQL extension:
 ```ini
 ;extension=mysqli
 ;extension=pdo_mysql
