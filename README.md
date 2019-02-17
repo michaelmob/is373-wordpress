@@ -13,6 +13,11 @@ The following instructions are written to run on [Ubuntu 18.04](http://releases.
 
 ### 1. Setup
 
+Clone this repository and set the current directory to the newly created path.
+```sh
+git clone https://github.com/thetarkus/is373-wordpress && cd is373-wordpress
+```
+
 Update your package indexes.
 ```sh
 sudo apt update
@@ -51,3 +56,16 @@ Login to the MySQL Monitor.
 ```sh
 sudo mysql
 ```
+
+Run these SQL commands after changing `'password'` to a strong password.
+```sql
+CREATE DATABASE wordpress;
+CREATE USER wordpress@localhost IDENTIFIED WITH mysql_native_password BY 'password';
+GRANT ALL PRIVILEGES ON wordpress.* TO wordpress@localhost;
+FLUSH PRIVILEGES;
+```
+
+### 4. Wordpress
+
+Duplicate `wp-config-sample.php` to `wp-config.php` and edit to satisfaction.  
+Be sure to set database credentials, keys, and salts.
