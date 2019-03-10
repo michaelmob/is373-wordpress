@@ -17,7 +17,10 @@
 				?>
 			</div>
 			<div class="column">
-				<?php get_sidebar(); ?>
+				<?php
+				get_sidebar();
+				get_template_part('categories');
+				?>
 			</div>
 		</div>
 	</div>
