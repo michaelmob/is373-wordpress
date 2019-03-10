@@ -6,7 +6,7 @@
 			</a>
 		</div>
 
-        <?php the_content(); ?>
+		<?php the_content(); ?>
 
 		<small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
 	</div>
