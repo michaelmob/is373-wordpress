@@ -40,11 +40,11 @@ require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
 nocache_headers();
 
-// Support wp-config-sample.php one level up, for the develop repo.
-if ( file_exists( ABSPATH . 'wp-config-sample.php' ) ) {
-	$config_file = file( ABSPATH . 'wp-config-sample.php' );
-} elseif ( file_exists( dirname( ABSPATH ) . '/wp-config-sample.php' ) ) {
-	$config_file = file( dirname( ABSPATH ) . '/wp-config-sample.php' );
+// Support wp-config.php one level up, for the develop repo.
+if ( file_exists( ABSPATH . 'wp-config.php' ) ) {
+	$config_file = file( ABSPATH . 'wp-config.php' );
+} elseif ( file_exists( dirname( ABSPATH ) . '/wp-config.php' ) ) {
+	$config_file = file( dirname( ABSPATH ) . '/wp-config.php' );
 } else {
 	wp_die(
 		sprintf(
@@ -423,7 +423,7 @@ if ( ! /iPad|iPod|iPhone/.test( navigator.userAgent ) ) {
 			<?php
 	else :
 		/*
-		 * If this file doesn't exist, then we are using the wp-config-sample.php
+		 * If this file doesn't exist, then we are using the wp-config.php
 		 * file one level up, which is for the develop repo.
 		 */
 		if ( file_exists( ABSPATH . 'wp-config-sample.php' ) ) {
